@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+}
+.container {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+}

@@ -28,6 +28,14 @@ app.get('/', function(req, res) {
   res.render("index");
 });
 
+// Receives data from form (action='/')
+// 'req.body' now contains form data.
+app.post('/', function(req, res){
+  var guessBox = req.body.guessBox;
+  var html = '<p>You guessed: </p>' + guessBox;
+  res.render("index");
+});
+
 app.listen(3000, function() {
   console.log("Working hard... Listening on 3000");
 });

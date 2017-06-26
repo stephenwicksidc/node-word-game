@@ -8,17 +8,21 @@
     <body>
         <div class="container">
             <div class="row1">
-                <h1>Mystery Word</h1>
+                <h1>Mystery Word Game</h1>
                 <p>You have {{guesses}} left.</p>
             </div>
             <div class="row2">
                 {{spacesArray}}
             </div>
-            <div class="row3"></div>
-                <form method="post">
-                    <input 
+            <div class="row3">
+                <form action="/" method="post">
+                    <input type="text" name="guessBox" class="textInput">
+                    <button class=submitButton>Make A Guess</button>
                 </form>
-            <div class="row4"></div>
+            </div>
+            <div class="row4">
+            <p>Letters guessed: {{html}}</p>
+            </div>
         </div>
     </body>
 <html>
